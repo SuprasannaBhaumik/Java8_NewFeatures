@@ -1,24 +1,16 @@
 package com.study.feature.functionalInterface;
 
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
 import com.study.feature.forEach.Person;
+import com.study.feature.forEach.Util;
 
 public class DemoFunctionalInterface {
 	
 	public static void main(String s[]) {
 		
-		Person p1 = new Person("name1", 12423434, 132);
-		Person p2 = new Person("name2", 1232344, 12352);
-		Person p3 = new Person("name3", 1234234, 152);
-		
-		List<Person> personList = new ArrayList<Person>();
-
-		personList.add(p1);
-		personList.add(p2);
-		personList.add(p3);
+		List<Person> personList = Util.getListOfPersons();
 		
 		//lambda way to use comparator
 		Comparator<Person> c1 = (person1,person2) -> {
