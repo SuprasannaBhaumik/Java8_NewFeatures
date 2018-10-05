@@ -6,9 +6,9 @@ import java.util.List;
 public class Util {
 	
 	public static List<Person> getListOfPersons() {
-		Person p1 = new Person("name1", 12423434, 132);
-		Person p2 = new Person("name2", 1232344, 12352);
-		Person p3 = new Person("name3", 1234234, 152);
+		Person p1 = new Person("Tom Cruise", 102, 56);
+		Person p2 = new Person("Arnold Schwarzeneger", 101, 75);
+		Person p3 = new Person("Jason Statham", 100, 46);
 		
 		List<Person> personList = new ArrayList<Person>();
 

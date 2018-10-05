@@ -1,8 +1,11 @@
-package com.study.feature.forEach;
+package com.study.feature.streams;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
+
+import com.study.feature.forEach.Person;
+import com.study.feature.forEach.Util;
 
 public class ChainingConsumers {
 	
@@ -17,11 +20,9 @@ public class ChainingConsumers {
 		
 		Consumer<Person> c2 = System.out::println;
 		
+		//chaining of the consumers
 		personList.stream().forEach(c1.andThen(c2));
 		
 		System.out.println(result.toString());
 	}
-
-	
-
 }
